@@ -45,7 +45,23 @@ class formController extends Controller
 
         ]);
         // @dd($request->validated());
+    }
+    //form3 method
+    function form4(){
+        return view('forms.form4');
+    }
+    function form4_data(Request $request){
 
+        if($request->hasFile('image')){
+            //  $path = $request->file('image')->store('uploads' , 'public ');
+             $path = $request->file('image')->store('uploads' , 'custom');
+            //  $name =time().rand().$request->file('image')->getClientOriginalName();
+            //  $equest->file('image')->move('uploads' ,$name );
+
+
+        }
+
+        return 'file uploaded |'.$path;
 
 
 

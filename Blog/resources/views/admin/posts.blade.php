@@ -69,7 +69,7 @@
                             <img src="{{ asset('images') }}/{{ $item->image }}" alt=""
                                 style="width : 80px ; height : 80px ; object-fit:covet ;">
                         </td>
-                        <td>{{ $item->title }}</td>
+                        <td>{{ $item->title }}</td>P
                         {{-- <td>{{$item->content}}</td> --}}
                         <td>{{ $item->categoryData->name }}</td>
                         <td>{{ $item->userData->name }}</td>
